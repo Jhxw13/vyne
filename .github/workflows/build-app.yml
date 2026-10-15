@@ -43,6 +43,7 @@ name: Build app
 # The six targets are a matrix so one fails without taking the rest down;
 # `fail-fast` is off for the same reason.
 on:
+  workflow_dispatch:
   workflow_call:
     inputs:
       ref:
